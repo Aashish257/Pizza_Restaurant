@@ -247,4 +247,192 @@ main h1 {
   object-fit: fill;
 }
 
+/* Gallary Section */
 
+.gallary {
+    padding: 50px 80px;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gallary h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.gallary hr {
+    width: 100px;
+    height: 3px;
+    background-color: #B62828;
+    border: none;
+    margin: 0 auto 40px auto;
+}
+
+.gallary-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallary-left img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallary-right {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+}
+
+.gallary-right img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallary-right #img1 {
+  grid-column: 2;
+}
+
+
+/* Find Us Section */
+
+.find-us {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.find-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.find-us hr {
+  width: 60px;
+  height: 3px;
+  background-color: #B62828;
+  border: none;
+  margin: 0 auto 40px;
+}
+
+.contact-section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact {
+  margin: 30px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.location::before,
+.location p:first-child::before,
+.number p:first-child::before,
+.number p:last-child::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.location p:first-child::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/684/684908.png');
+}
+
+.number p:first-child::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/724/724664.png');
+}
+
+.number p:last-child::before {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/724/724664.png');
+}
+
+.map img {
+  width: 450px;
+  max-width: 90vw;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  font-family: sans-serif;
+}
+
+footer svg {
+  width: 80px;
+  height: auto;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.footer-item:nth-child(1)::before {
+  content: '';
+  background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png'); /* email icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.footer-item:nth-child(2) p::before {
+  content: '';
+  background-image: url('https://cdn-icons-png.flaticon.com/512/597/597177.png'); /* phone icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-item:nth-child(2) p + p::before {
+  /* second phone number */
+  content: '';
+}
